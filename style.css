@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+	.underlineChildren a{
+		@apply text-xs p-1 hover:underline focus:underline focus:outline-dashed 
+	}
+
+	.underlineChildren li{
+		@apply m-3
+	}
+
+	.card {
+		@apply w-full md:w-1/2 lg:w-1/4 p-3 justify-center
+	}
+
+	.card img{
+		@apply w-full
+	}
+
+	.card h2 {
+		@apply text-xl font-bold 
+	}
+	.card p {
+		@apply text-xs py-2
+	}
+	.card a {
+		@apply text-blue-800 text-xs
+	}
+
+	header a, header button, main a, main button{
+		@apply focus:outline-1 focus:outline-dashed
+	}
+}
+
